@@ -1,10 +1,10 @@
 package sudoku.observer;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public abstract class AbstractGameSubject implements GameSubject{
-    private final List<GameObserver> observers = new CopyOnWriteArrayList<>();
+    private final List<GameObserver> observers = new ArrayList<>();
 
     @Override
     public void addObserver(GameObserver observer) {
